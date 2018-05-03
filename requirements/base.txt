@@ -1,4 +1,9 @@
-apistar
-apistar-cors
-fire
+SQLAlchemy
+Flask
+Flask-SQLAlchemy
+psycopg2
+Flask-Admin
+Flask-DebugToolbar
+Flask-Login
+Fire
 python-dotenv

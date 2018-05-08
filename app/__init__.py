@@ -1,19 +1,11 @@
-from apistar import App as ApistarApp
-from apistar_cors import CORSMixin
+from flask import Flask
 
-from app.routes import routes
+from flask_admin import Admin
 
+app = Flask(__name__)
 
-class App(CORSMixin, ApistarApp):
-    pass
+admin = Admin(app, name='admin', template_mode='bootstrap3')
+# Add administrative views here
 
-
-def homepage() -> dict:
-    return {
-        'message': 'home'
-    }
-
-
-app = App(
-    routes=routes
-)
+if __name__ == "__main__":
+    app.run()

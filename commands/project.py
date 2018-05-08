@@ -34,7 +34,7 @@ class Cli:
 
     def run(self, host='0.0.0.0', port=5000, debug=True):
         from app import app
-        app.serve(
+        app.run(
             host=host,
             port=port,
             debug=debug
